@@ -198,4 +198,9 @@ SPECTACULAR_SETTINGS = {
 DJOSER = {
     "SEND_ACTIVATION_EMAIL": True,
     "ACTIVATION_URL": "activate/{uid}/{token}",
+    "SERIALIZERS": {
+        "user_create": "apps.users.serializers.CustomUserCreateSerializer",
+        "user": "apps.users.serializers.CustomUserSerializer",
+        "current_user": "apps.users.serializers.CustomUserSerializer",
+    },
 }
