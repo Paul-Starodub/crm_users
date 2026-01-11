@@ -194,5 +194,5 @@ SPECTACULAR_SETTINGS = {
 
 DJOSER = {
     "SEND_ACTIVATION_EMAIL": True,
-    "ACTIVATION_URL": "activation/{uid}/{token}",
+    "ACTIVATION_URL": "activate/{uid}/{token}",
 }
